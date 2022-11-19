@@ -19,7 +19,7 @@
     "motion": "^10.14.3",
     "next": "13.0.3",
     "react": "18.2.0",
-    "react-alice-carousel": "^2.6.5",
+    "react-alice-carousel": "2.6.6",
     "react-dom": "18.2.0",
     "react-icons": "^4.6.0",
     "react-responsive-carousel": "^3.2.23",
