@@ -1,9 +1,11 @@
-import { Box, Text, HStack, Image, Flex } from "@chakra-ui/react";
+import { Box, Text, HStack, Image, Flex, useMediaQuery } from "@chakra-ui/react";
 import Button from "../Button";
 import Modal from "../Modal";
 import { IoIosArrowDown } from "react-icons/io";
 
 const DesktopHome = () => {
+  const [isLargerThan768] = useMediaQuery("(min-width: 1024px)");
+
   return (
     <Box width="100%">
       <Flex justify='flex-end' align='flex-start'>
@@ -48,7 +50,7 @@ const DesktopHome = () => {
               </Text>
               <IoIosArrowDown fill="#616161" />
             </HStack>
-            {/* <Modal /> */}
+            {isLargerThan768 && <Modal />}
             <Text fontSize="14px" color="#616161" fontWeight={400}>
               Pricing
             </Text>
