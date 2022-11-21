@@ -43,8 +43,9 @@ const HomePageMobile = () => {
             color="#616161"
             pt={"30px"}
             fontSize="12px"
+            textAlign='center'
             lineHeight="24px"
-            width="333px"
+            width="100%"
           >
             Sell online courses, conduct assessments, share notes and issue
             online certifications, all on your terms.

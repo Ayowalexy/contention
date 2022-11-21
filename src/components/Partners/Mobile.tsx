@@ -1,6 +1,7 @@
 import { Box, Text, Flex } from "@chakra-ui/react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+import Marquee from "react-fast-marquee";
 
 const items = [
   <Box
@@ -8,7 +9,7 @@ const items = [
     width="104px"
     height="32px"
     bgSize="contain"
-    bgRepeat='no-repeat'
+    bgRepeat="no-repeat"
     bgImage={{
       base: 'url("/images/img1.png")',
     }}
@@ -17,7 +18,7 @@ const items = [
     padding="20px"
     width="104px"
     height="32px"
-    bgRepeat='no-repeat'
+    bgRepeat="no-repeat"
     bgSize="contain"
     bgImage={{
       base: 'url("/images/img2.png")',
@@ -25,7 +26,7 @@ const items = [
   />,
   <Box
     padding="20px"
-    bgRepeat='no-repeat'
+    bgRepeat="no-repeat"
     width="104px"
     bgSize="contain"
     height="32px"
@@ -36,7 +37,7 @@ const items = [
   <Box
     padding="20px"
     width="104px"
-    bgRepeat='no-repeat'
+    bgRepeat="no-repeat"
     height="32px"
     bgSize="contain"
     bgImage={{
@@ -45,7 +46,7 @@ const items = [
   />,
   <Box
     padding="20px"
-    bgRepeat='no-repeat'
+    bgRepeat="no-repeat"
     width="104px"
     height="32px"
     bgSize="contain"
@@ -87,12 +88,63 @@ const MobilePartner = () => {
       <Box h={"30px"} />
 
       <Flex width="100%" justify="center" align="center">
-        <AliceCarousel
+        <Marquee speed={40} gradient={false} pauseOnHover={true}>
+          <Box
+            padding="20px"
+            width="178px"
+            marginLeft={"70px"}
+            height="56px"
+            bgImage={{
+              base: 'url("/images/img1.png")',
+            }}
+          />
+          ,
+          <Box
+            padding="20px"
+            marginLeft={"70px"}
+            width="178px"
+            height="56px"
+            bgImage={{
+              base: 'url("/images/img2.png")',
+            }}
+          />
+          ,
+          <Box
+            padding="20px"
+            width="178px"
+            marginLeft={"70px"}
+            height="56px"
+            bgImage={{
+              base: 'url("/images/img3.png")',
+            }}
+          />
+          ,
+          <Box
+            padding="20px"
+            width="178px"
+            marginLeft={"70px"}
+            height="56px"
+            bgImage={{
+              base: 'url("/images/img4.png")',
+            }}
+          />
+          ,
+          <Box
+            padding="20px"
+            marginLeft={"70px"}
+            width="178px"
+            height="56px"
+            bgImage={{
+              base: 'url("/images/img5.png")',
+            }}
+          />
+        </Marquee>
+        {/* <AliceCarousel
           responsive={responsive}
           mouseTracking
           items={items}
           controlsStrategy="alternate"
-        />
+        /> */}
       </Flex>
     </Flex>
   );

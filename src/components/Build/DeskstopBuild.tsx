@@ -27,6 +27,7 @@ const DesktopBuild = () => {
         fontSize="40px"
         lineHeight="48px"
         textAlign="center"
+        paddingTop={'30px'}
       >
         Built for One-man <br />
         business and large <br />
@@ -45,24 +46,47 @@ const DesktopBuild = () => {
         better and grow bigger
       </Text>
 
-      <HStack width="100%" justify="space-around" marginTop="90px">
-        <Image src="/images/hero1.png" />
-        <VStack spacing="40px" align="flex-start">
+      <Flex
+        align="center"
+        flexDir={{
+          md: "column",
+          lg: "row",
+        }}
+        width="100%"
+        height={{ lg: "80vh" }}
+        justify="space-around"
+        marginTop="90px"
+      >
+        <Image
+          src="/images/hero1.png"
+          width={{
+            md: "100%",
+            lg: "35%",
+          }}
+        />
+        <VStack
+          spacing="40px"
+          width={{ md: "100%", lg: "50%" }}
+          align={{ md: "center", lg: "flex-start" }}
+        >
           <Text
             lineHeight="48px"
-            width="550px"
+            width="80%"
             fontSize="33px"
             fontWeight={700}
+            paddingTop={{ md: "40px" }}
+            textAlign={{ md: "center", lg: 'left' }}
           >
             Highly customizable templates to suit your business brand
           </Text>
 
           <Text
             lineHeight="30px"
-            width="500px"
+            width="80%"
             color="#616161"
             fontSize="20px"
             fontWeight={400}
+            textAlign={{ md: "center", lg: 'left' }}
           >
             As a creator, there are available templates for you to customize and
             setup. You can also select your desired features based on your
@@ -74,15 +98,32 @@ const DesktopBuild = () => {
             <Text>I'm Interested</Text>
           </Button>
         </VStack>
-      </HStack>
+      </Flex>
 
-      <HStack width="100%" justify="space-around" marginTop="90px">
-        <VStack spacing="40px" align="flex-start">
+      <Flex
+        flexDir={{
+          md: "column",
+          lg: "row",
+        }}
+        align="center"
+        width="100%"
+        height={{ lg: "80vh" }}
+        justify="space-around"
+        marginTop="90px"
+      >
+        <VStack
+          spacing="40px"
+          width={{ lg: "50%" }}
+          order={{ md: 1 }}
+          align={{ md: "center", lg: "flex-start" }}
+        >
           <Text
             lineHeight="48px"
             width="550px"
             fontSize="33px"
             fontWeight={700}
+            textAlign={{ md: "center", lg: 'left' }}
+            paddingTop={{ md: "40px" }}
           >
             Launch to your domain
           </Text>
@@ -93,10 +134,11 @@ const DesktopBuild = () => {
             color="#616161"
             fontSize="20px"
             fontWeight={400}
+            textAlign={{ md: "center", lg: 'left' }}
+
           >
             Choose how you want your student to access your learning centre,
             Yes, your students come to your link and not contentionary.com
-          
           </Text>
           <UnorderedList fontWeight={400} fontSize="16px" color="#616161">
             <ListItem> Your domain: www.example.com (₦1,500/ month)</ListItem>
@@ -113,13 +155,46 @@ const DesktopBuild = () => {
             <Text>I'm Interested</Text>
           </Button>
         </VStack>
-        <Image src="/images/hero2.png" />
-      </HStack>
+        <Image
+          src="/images/hero2.png"
+          width={{
+            md: "100%",
+            lg: "35%",
+          }}
+        />
+      </Flex>
 
-      <HStack width="100%" justify="space-around" marginTop="90px">
-        <Image src="/images/hero3.png" />
-        <VStack spacing="40px" align="flex-start" width="550px">
-          <Text lineHeight="48px" fontSize="33px" fontWeight={700}>
+      <Flex
+        flexDir={{
+          md: "column",
+          lg: "row",
+        }}
+        align="center"
+        width="100%"
+        height={{ lg: "80vh" }}
+        justify="space-around"
+        marginTop="90px"
+      >
+        <Image
+          src="/images/hero3.png"
+          width={{
+            md: "100%",
+            lg: "35%",
+          }}
+        />
+        <VStack
+          spacing="40px"
+          align={{ md: "center", lg: "flex-start" }}
+          width={{ lg: "50%" }}
+        >
+          <Text
+            lineHeight="48px"
+            fontSize="33px"
+            paddingTop={{ md: "40px" }}
+            fontWeight={700}
+            textAlign={{ md: "center", lg: 'left' }}
+
+          >
             Sales Driven Approach (sell independently and sell via partners’
             academies)
           </Text>
@@ -143,7 +218,7 @@ const DesktopBuild = () => {
             <Text>I'm Interested</Text>
           </Button>
         </VStack>
-      </HStack>
+      </Flex>
     </Flex>
   );
 };

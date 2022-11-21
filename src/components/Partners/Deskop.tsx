@@ -3,57 +3,57 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
 import AliceCarousel from "react-alice-carousel";
+import Marquee from "react-fast-marquee";
+
 import "react-alice-carousel/lib/alice-carousel.css";
 
-
 const items = [
-    <Box
-      padding="20px"
-      width="178px"
-      height="56px"
-      bgImage={{
-        base: 'url("/images/img1.png")',
-      }}
-    />,
-    <Box
-      padding="20px"
-      width="178px"
-      height="56px"
-      bgImage={{
-        base: 'url("/images/img2.png")',
-      }}
-    />,
-    <Box
-      padding="20px"
-      width="178px"
-      height="56px"
-      bgImage={{
-        base: 'url("/images/img3.png")',
-      }}
-    />,
-    <Box
-      padding="20px"
-      width="178px"
-      height="56px"
-      bgImage={{
-        base: 'url("/images/img4.png")',
-      }}
-    />,
-    <Box
-      padding="20px"
-      width="178px"
-      height="56px"
-      bgImage={{
-        base: 'url("/images/img5.png")',
-      }}
-    />,
-  ];
-
+  <Box
+    padding="20px"
+    width="178px"
+    height="56px"
+    bgImage={{
+      base: 'url("/images/img1.png")',
+    }}
+  />,
+  <Box
+    padding="20px"
+    width="178px"
+    height="56px"
+    bgImage={{
+      base: 'url("/images/img2.png")',
+    }}
+  />,
+  <Box
+    padding="20px"
+    width="178px"
+    height="56px"
+    bgImage={{
+      base: 'url("/images/img3.png")',
+    }}
+  />,
+  <Box
+    padding="20px"
+    width="178px"
+    height="56px"
+    bgImage={{
+      base: 'url("/images/img4.png")',
+    }}
+  />,
+  <Box
+    padding="20px"
+    width="178px"
+    height="56px"
+    bgImage={{
+      base: 'url("/images/img5.png")',
+    }}
+  />,
+];
 
 const responsive = {
-    0: { items: 1 },
-    568: { items: 2 },
-    1024: { items: 5 },
+  0: { items: 1 },
+  568: { items: 2 },
+  1024: { items: 5 },
 };
 
 const PartnerDesktop = () => {
@@ -83,12 +83,68 @@ const PartnerDesktop = () => {
       <Box h={"30px"} />
 
       <Flex width="100%" justify="center" align="center">
-        <AliceCarousel
+        <Marquee speed={40} gradient={false} pauseOnHover={true}>
+          <Box
+            padding="20px"
+            width="178px"
+            marginLeft={'70px'}
+            height="56px"
+            bgImage={{
+              base: 'url("/images/img1.png")',
+            }}
+          />
+          ,
+          <Box
+            padding="20px"
+            marginLeft={'70px'}
+
+            width="178px"
+            height="56px"
+            bgImage={{
+              base: 'url("/images/img2.png")',
+            }}
+          />
+          ,
+          <Box
+            padding="20px"
+            width="178px"
+            marginLeft={'70px'}
+
+            height="56px"
+            bgImage={{
+              base: 'url("/images/img3.png")',
+            }}
+          />
+          ,
+          <Box
+            padding="20px"
+            width="178px"
+            marginLeft={'70px'}
+
+            height="56px"
+            bgImage={{
+              base: 'url("/images/img4.png")',
+            }}
+          />
+          ,
+          <Box
+            padding="20px"
+            marginLeft={'70px'}
+
+            width="178px"
+            height="56px"
+            bgImage={{
+              base: 'url("/images/img5.png")',
+            }}
+          />
+          
+        </Marquee>
+        {/* <AliceCarousel
           responsive={responsive}
           mouseTracking
           items={items}
           controlsStrategy="alternate"
-        />
+        /> */}
       </Flex>
     </Flex>
   );

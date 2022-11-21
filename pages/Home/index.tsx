@@ -1,4 +1,11 @@
-import { Text, Image, Box, HStack, VStack, useMediaQuery } from "@chakra-ui/react";
+import {
+  Text,
+  Image,
+  Box,
+  HStack,
+  VStack,
+  useMediaQuery,
+} from "@chakra-ui/react";
 import { IoIosArrowDown } from "react-icons/io";
 import Button from "../../src/components/Button";
 
@@ -9,14 +16,19 @@ import Pricing from "../../src/components/Pricing";
 import HomePage from "../../src/components/HomePage";
 import Footer from "../../src/components/Footer";
 
-
 const Index = () => {
-
   const [isLargerThan768] = useMediaQuery("(min-width: 768px)");
   return (
     <Box>
-      <Box width="100%" padding={isLargerThan768 ? "30px 80px" : '0px'} >
-        <HomePage />
+      <HomePage />
+      <Box
+        width="100%"
+        padding={{
+          base: "0px",
+          md: "30px",
+          lg: "30px 80px",
+        }}
+      >
         <Partners />
         <Build />
         <Highlight />

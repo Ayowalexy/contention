@@ -9,7 +9,7 @@ const DeskopHighlight = () => {
       align="center"
       pt={{
         lg: "150px",
-        base: '20px'
+        base: "20px",
       }}
       flexDir="column"
     >
@@ -18,11 +18,12 @@ const DeskopHighlight = () => {
         fontSize="40px"
         fontWeight={700}
         textAlign="center"
+        paddingTop={{ md: "70px", lg: '0px' }}
       >
         Highlights of <br />
         the Academy
       </Text>
-      <HStack width="85%" flexWrap="wrap" justify="space-between" mt={"70px"}>
+      <HStack width="90%" flexWrap="wrap" justify="space-between" mt={"70px"}>
         {[
           {
             id: 1,
@@ -59,22 +60,24 @@ const DeskopHighlight = () => {
             text: "Sell other forms of content (ebooks, Audio, practice test).",
           },
         ].map((ele, idx) => (
-          <Box>
+          <Box
+            width={{
+              lg: "313px",
+              base: "45%",
+              md: "30%",
+            }}
+          >
             <VStack
               align="flex-start"
-              width={{
-                lg: "313px",
-                base: '150px',
-
-              }}
+              width="100%"
               height={{
                 lg: "166px",
-                base: '193px'
+                base: "193px",
               }}
               spacing="20px"
               padding={{
                 lg: "20px",
-                base:'20px'
+                base: "20px",
               }}
               marginBottom={"40px"}
               backgroundColor="#fff"
@@ -85,12 +88,12 @@ const DeskopHighlight = () => {
               <Text
                 width="100%"
                 lineHeight={{
-                    base: '21px',
-                    lg: "25px"
+                  base: "21px",
+                  lg: "25px",
                 }}
                 fontSize={{
-                    base: '12px',
-                    lg: "18px"
+                  base: "12px",
+                  lg: "18px",
                 }}
                 fontWeight={700}
               >

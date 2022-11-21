@@ -13,18 +13,23 @@ const DeskopPricing = () => {
         spacing="0px"
       >
         <VStack
-          width="70%"
+          width={{ md: "50%", lg: "70%" }}
           backgroundColor="#000"
-          align="flex-start"
+          align={{ lg: "flex-start", md: "center" }}
           spacing="20px"
           height="100%"
           justify="center"
-          paddingLeft={"150px"}
+          paddingLeft={{ lg: "150px" }}
         >
           <Text color="#C2C2C2" fontWeight={700} fontSize="35px">
             Our pricing
           </Text>
-          <Text fontSize="20px" fontWeight={400} color="#C2C2C2">
+          <Text
+            textAlign={{ md: "center", lg: 'left' }}
+            fontSize="20px"
+            fontWeight={400}
+            color="#C2C2C2"
+          >
             <span style={{ color: "rgba(247, 125, 39, 1)" }}>
               We only make profit when you are making profit
             </span>{" "}
@@ -35,7 +40,22 @@ const DeskopPricing = () => {
             Setup is FREE
           </Text>
         </VStack>
-        <Image flexGrow={1} src="/images/img6.png" />
+        {/* <Box
+          bgImage={{
+            base: 'url("/images/img6.png")',
+          }}
+          width={{
+            md: "50%",
+            lg: "30%",
+          }}
+          bgSize="contain"
+        /> */}
+        <Image
+          flexGrow={1}
+          src="/images/img6.png"
+          width="30%"
+          height={{ md:"374px" }}
+        />
       </HStack>
 
       <HStack
@@ -47,14 +67,14 @@ const DeskopPricing = () => {
       >
         <HStack width="60%" justify="space-between" align="center">
           <Image src="/images/Burst-Bloat.png" />
-          <VStack>
+          <VStack width="80%">
             <Text
               fontWeight={400}
               fontSize="30px"
               lineHeight="33px"
               marginBottom="30px"
               textAlign="center"
-              width="590px"
+              width="100%"
               color="#616161"
             >
               Focus on your content and the business around it, let
