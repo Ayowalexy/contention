@@ -3,6 +3,7 @@ import { Box, Text, HStack, Flex, Image } from "@chakra-ui/react";
 const DeskopFooter = () => {
   return (
     <HStack
+    id="contact"
       width="100%"
       padding="80px 0px"
       justify="space-around"

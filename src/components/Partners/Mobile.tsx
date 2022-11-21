@@ -89,55 +89,42 @@ const MobilePartner = () => {
 
       <Flex width="100%" justify="center" align="center">
         <Marquee speed={40} gradient={false} pauseOnHover={true}>
-          <Box
-            padding="20px"
-            width="178px"
-            marginLeft={"70px"}
-            height="56px"
-            bgImage={{
-              base: 'url("/images/img1.png")',
-            }}
-          />
-          ,
-          <Box
-            padding="20px"
-            marginLeft={"70px"}
-            width="178px"
-            height="56px"
-            bgImage={{
-              base: 'url("/images/img2.png")',
-            }}
-          />
-          ,
-          <Box
-            padding="20px"
-            width="178px"
-            marginLeft={"70px"}
-            height="56px"
-            bgImage={{
-              base: 'url("/images/img3.png")',
-            }}
-          />
-          ,
-          <Box
-            padding="20px"
-            width="178px"
-            marginLeft={"70px"}
-            height="56px"
-            bgImage={{
-              base: 'url("/images/img4.png")',
-            }}
-          />
-          ,
-          <Box
-            padding="20px"
-            marginLeft={"70px"}
-            width="178px"
-            height="56px"
-            bgImage={{
-              base: 'url("/images/img5.png")',
-            }}
-          />
+        
+          {
+            [
+              'url("/images/img1.png")',
+              'url("/images/img2.png")',
+              'url("/images/img3.png")', 
+              'url("/images/img4.png")',
+              'url("/images/img5.png")', 
+              'url("/images/img7.png")',
+              'url("/images/img8.png")',
+              'url("/images/img9.png")',
+              'url("/images/img10.png")', 
+              'url("/images/img11.png")',
+              'url("/images/img12.png")', 
+              'url("/images/img13.png")',
+              'url("/images/img14.png")', 
+              'url("/images/img15.png")',
+
+
+            ].map((element, idx) => (
+              
+              <Box
+              padding="20px"
+              width="178px"
+              marginLeft={'70px'}
+              height="70px"
+              bgRepeat='no-repeat'
+              bgSize='contain'
+              bgPos='center'
+              key={element}
+              bgImage={{
+                base: element,
+              }}
+            />
+            ))
+          }
         </Marquee>
         {/* <AliceCarousel
           responsive={responsive}

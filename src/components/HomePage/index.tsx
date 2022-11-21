@@ -1,5 +1,5 @@
 import { useMediaQuery } from "@chakra-ui/react";
-import DesktopHome from "./Desktop";
+import DesktopHome from "./Desktop.js";
 import HomePageMobile from "./Mobile";
 
 const HomePage = () => {

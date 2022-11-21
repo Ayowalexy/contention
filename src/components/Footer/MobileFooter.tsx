@@ -3,6 +3,8 @@ import { Box, Text, Image, Flex, HStack } from "@chakra-ui/react";
 const MobileFooter = () => {
   return (
     <Flex
+    id="contact"
+
       padding="120px 30px"
       justify="flex-start"
       backgroundColor="#fff"

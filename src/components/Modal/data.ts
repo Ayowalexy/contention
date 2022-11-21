@@ -76,31 +76,74 @@ export const data_3 = [
     {
         img: '/images/svg/svg1.svg',
         title: 'Live Interactions',
-        text: 'Create unlimited online courses to equip your students.',
+        text: 'Live chat and ommunicate with your students instantly.',
         color: 'rgba(43, 104, 67, 0.15)'
-    },{
-        img: '/images/svg/svg13.svg',
-        title: 'CTTN Pay',
-        color: 'rgba(24, 119, 242, 0.15)',
-        text: 'Generate and send school terms report sheets to your students online.'
-    }
-    ,{
+    },
+    {
+        img: '/images/svg/svg19.svg',
+        color: 'rgba(9, 165, 219, 0.15)',
+        title: 'Paystack Payment',
+        text: 'Accept local payment using Paystack Payment gateway'
+    },
+   
+    {
         img: '/images/svg/svg14.svg',
         title: 'Content Reviews',
         color: 'rgba(190, 32, 46, 0.15)',
-        text: 'Conduct online tests of all kind and get instant results.'
+        text: 'Allow academy reviews to make room for users to see the value of your content.'
     },
     {
-        img: '/images/svg/svg15.svg',
-        color: 'rgba(247, 148, 32, 0.15)',
-        title: 'Payment Wallet',
-        text: 'Gamify your tesing processes. Host online competitions amongst your students. '
+        img: '/images/svg/svg22.svg',
+        title: 'Stripe Payment',
+        color: 'rgba(24, 119, 242, 0.15)',
+        text: 'Accept intrnational payment using Stripe Payment gateway.'
     },
     {
         img: '/images/svg/svg3.svg',
         color: 'rgba(24, 119, 242, 0.15)',
         title: 'Centre Reviews',
         text: 'Sell e-books and allow your subscribers to either read, download, or both. '
+    },
+   
+    {
+        img: '/images/svg/svg23.svg',
+        color: 'rgba(247, 148, 32, 0.15)',
+        title: 'Payment Wallet',
+        text: 'Gamify your tesing processes. Host online competitions amongst your students. '
+    },
+    
+
+]
+
+export const data_4 = [
+    {
+        img: '/images/svg/svg16.svg',
+        title: 'Pin Generation',
+        text: 'Generate access pins to allow users access your contents without paying the system..',
+        color: 'rgba(121, 78, 0, 0.15)'
+    },{
+        img: '/images/svg/svg17.svg',
+        title: 'In-course Certification',
+        color: 'rgba(43, 104, 67, 0.15)',
+        text:'Certify your subscribers upon completion of your course directly from your course page.'
+    }
+    ,{
+        img: '/images/svg/svg18.svg',
+        title: 'Privacy (Make Private)',
+        color: 'rgba(255, 0, 0, 0.15)',
+        text: 'Create contents and make them private to restrict unauthorized users to access them.'
+    },
+    {
+        img: '/images/svg/svg19.svg',
+        color: 'rgba(63, 93, 255, 0.15)',
+        title: 'Question Bank Manager',
+        text: 'Create question banks to store questions and reuse them for new exams.'
+    },
+    {
+        img: '/images/svg/svg20.svg',
+        color: 'rgba(247, 148, 32, 0.15)',
+        title: 'In-Exam Proctor',
+        text: 'Activate Proctoring to allow the system to supervise your exams eith A.I technology'
     },
 
 ]

@@ -3,7 +3,7 @@ import Button from "../Button";
 
 const DeskopPricing = () => {
   return (
-    <VStack width="100%">
+    <VStack width="100%" id="pricing">
       <HStack
         width="100%"
         marginTop={"50px"}

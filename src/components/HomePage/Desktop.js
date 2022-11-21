@@ -1,44 +1,66 @@
-import { Box, Text, HStack, Image, Flex, useMediaQuery } from "@chakra-ui/react";
+import {
+  Box,
+  Text,
+  HStack,
+  Image,
+  Flex,
+  useMediaQuery,
+} from "@chakra-ui/react";
 import Button from "../Button";
 import Modal from "../Modal";
+import Link from "next/link";
 import { IoIosArrowDown } from "react-icons/io";
 
 const DesktopHome = () => {
   const [isLargerThan768] = useMediaQuery("(min-width: 1024px)");
 
+  const element = document.getElementById("pricing");
+  const y = element.getBoundingClientRect().top + window.scrollY;
+
+  const element_2 = document.getElementById("contact");
+  const x = element_2.getBoundingClientRect().top + window.scrollY;
+
+  const scrollTo = (val) => {
+    window.scroll({
+      top: val,
+      behavior: 'smooth'
+    });
+  }
+
+
   return (
     <Box width="100%">
-      <Flex justify='flex-end' align='flex-start'>
-      <Box
-        zIndex={-100}
-        position="absolute"
-        width={{
-          md: "70%",
-          lg: "94.5%",
-        }}
-        height={{
-          md: '40vh',
-          lg: "80vh",
-        }}
-        bgImage={{
-          base: 'url("/images/bgD.png")',
-        }}
-        bgSize="contain"
-        bgPos="right"
-        // top={{
-        //   md: -305,
-        //   lg: -20,
-        // }}
-        top={0}
-        bgRepeat="no-repeat"
-      />
+      <Flex justify="flex-end" align="flex-start">
+        <Box
+          zIndex={-100}
+          position="absolute"
+          width={{
+            md: "70%",
+            lg: "94.5%",
+          }}
+          height={{
+            md: "40vh",
+            lg: "80vh",
+          }}
+          bgImage={{
+            base: 'url("/images/bgD.png")',
+          }}
+          bgSize="contain"
+          bgPos="right"
+          // top={{
+          //   md: -305,
+          //   lg: -20,
+          // }}
+          top={0}
+          bgRepeat="no-repeat"
+        />
       </Flex>
       <Box
-        width='100%'
+        width="100%"
         padding={{
-          base: '0px',
-          md: '30px',
-          lg: "30px 80px"
+          base: "0px",
+          md: "30px",
+          lg: "30px 80px",
         }}
       >
         <HStack width="100%" justify="space-between">
@@ -51,10 +73,11 @@ const DesktopHome = () => {
               <IoIosArrowDown fill="#616161" />
             </HStack>
             {isLargerThan768 && <Modal />}
-            <Text fontSize="14px" color="#616161" fontWeight={400}>
-              Pricing
-            </Text>
-            <Text fontSize="14px" color="#616161" fontWeight={400}>
+              <Text onClick={() => scrollTo(y)} cursor='pointer' fontSize="14px" color="#616161" fontWeight={400}>
+                Pricing
+              </Text>
+
+            <Text fontSize="14px"  onClick={() => scrollTo(x)} cursor='pointer'  color="#616161" fontWeight={400}>
               Contact us
             </Text>
           </HStack>

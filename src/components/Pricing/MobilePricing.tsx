@@ -4,6 +4,7 @@ import Button from "../Button";
 const MobilePricing = () => {
   return (
     <Flex
+    id="pricing"
       width="100%"
       align="center"
       justify="center"
