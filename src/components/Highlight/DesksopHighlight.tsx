@@ -77,7 +77,7 @@ const DeskopHighlight = () => {
               spacing="20px"
               padding={{
                 lg: "20px",
-                base: "20px",
+                base: "10px",
               }}
               marginBottom={"40px"}
               backgroundColor="#fff"

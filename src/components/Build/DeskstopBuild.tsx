@@ -165,7 +165,7 @@ const DesktopBuild = () => {
             src="/images/hero2.png"
             width={{
               md: "100%",
-              lg: "35%",
+              lg: "45%",
             }}
             // border='2px solid red'
           />
