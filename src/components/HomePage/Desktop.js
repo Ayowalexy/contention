@@ -31,22 +31,22 @@ const DesktopHome = () => {
 
   return (
     <HStack justify='space-between' align='center' width="100%">
-      <Box width='50%' padding='30px 80px'>
-        <HStack width="100%" justify="space-between">
+      <Box width='50%' padding='30px 0px 30px 80px'>
+        <HStack width="100%" justify="space-between" >
           <HStack spacing="40px">
             <Image src="/images/logo.png" />
             <HStack paddingLeft="20px" className="menu">
-              <Text fontSize="14px" color="#616161" fontWeight={400}>
+              <Text fontSize="13px" color="#616161" fontWeight={400}>
                 Base Plugin
               </Text>
               <IoIosArrowDown fill="#616161" />
             </HStack>
             {isLargerThan768 && <Modal />}
-            <Text onClick={() => scrollTo(y)} cursor='pointer' fontSize="14px" color="#616161" fontWeight={400}>
+            <Text onClick={() => scrollTo(y)} cursor='pointer' fontSize="13px" color="#616161" fontWeight={400}>
               Pricing
             </Text>
 
-            <Text fontSize="14px" onClick={() => scrollTo(x)} cursor='pointer' color="#616161" fontWeight={400}>
+            <Text fontSize="13px" onClick={() => scrollTo(x)} cursor='pointer' color="#616161" fontWeight={400}>
               Contact us
             </Text>
           </HStack>
