@@ -5,6 +5,7 @@ import {
   Image,
   Flex,
   useMediaQuery,
+  VStack
 } from "@chakra-ui/react";
 import Button from "../Button";
 import Modal from "../Modal";
@@ -29,40 +30,8 @@ const DesktopHome = () => {
 
 
   return (
-    <Box width="100%">
-      <Flex justify="flex-end" align="flex-start">
-        <Box
-          zIndex={-100}
-          position="absolute"
-          width={{
-            md: "70%",
-            lg: "94.5%",
-          }}
-          height={{
-            md: "40vh",
-            lg: "80vh",
-          }}
-          bgImage={{
-            base: 'url("/images/bgD.png")',
-          }}
-          bgSize="contain"
-          bgPos="right"
-          // top={{
-          //   md: -305,
-          //   lg: -20,
-          // }}
-          top={0}
-          bgRepeat="no-repeat"
-        />
-      </Flex>
-      <Box
-        width="100%"
-        padding={{
-          base: "0px",
-          md: "30px",
-          lg: "30px 80px",
-        }}
-      >
+    <HStack justify='space-between' align='center' width="100%">
+      <Box width='50%' padding='30px 80px'>
         <HStack width="100%" justify="space-between">
           <HStack spacing="40px">
             <Image src="/images/logo.png" />
@@ -73,17 +42,15 @@ const DesktopHome = () => {
               <IoIosArrowDown fill="#616161" />
             </HStack>
             {isLargerThan768 && <Modal />}
-              <Text onClick={() => scrollTo(y)} cursor='pointer' fontSize="14px" color="#616161" fontWeight={400}>
-                Pricing
-              </Text>
+            <Text onClick={() => scrollTo(y)} cursor='pointer' fontSize="14px" color="#616161" fontWeight={400}>
+              Pricing
+            </Text>
 
-            <Text fontSize="14px"  onClick={() => scrollTo(x)} cursor='pointer'  color="#616161" fontWeight={400}>
+            <Text fontSize="14px" onClick={() => scrollTo(x)} cursor='pointer' color="#616161" fontWeight={400}>
               Contact us
             </Text>
           </HStack>
-          <Button width="161px">
-            <Text>I'm Interested</Text>
-          </Button>
+
         </HStack>
 
         <Box mt="80px">
@@ -135,7 +102,57 @@ const DesktopHome = () => {
           </Box>
         </Box>
       </Box>
-    </Box>
+      <HStack width='50%' height='80vh' justify='flex-end' alignSelf='flex-start' >
+        <VStack  width='90%'
+          bgRepeat={'no-repeat'}
+          align='flex-end'
+          padding='30px 80px'
+          bgPos={'top right'}
+          // align='flex-start'
+          height='100%'
+           bgImage={{
+            base: 'url("/images/rect.png")',
+
+          }}
+          bgSize="contain">
+          <Button width="161px">
+            <Text>I'm Interested</Text>
+          </Button>
+          <Image src="/images/bgD1.png" paddingTop='40px' />
+        </VStack>
+      </HStack>
+      {/* <Flex justify="flex-end" align="flex-start">
+        <Box
+          zIndex={-100}
+          position="absolute"
+          width={{
+            md: "70%",
+            lg: "94.5%",
+          }}
+          height={{
+            md: "40vh",
+            lg: "80vh",
+          }}
+          bgImage={{
+            base: 'url("/images/bgD.png")',
+          }}
+          bgSize="contain"
+          bgPos="right"
+          top={0}
+          bgRepeat="no-repeat"
+        />
+      </Flex> */}
+      {/* <Box
+        width="100%"
+        padding={{
+          base: "0px",
+          md: "30px",
+          lg: "30px 80px",
+        }}
+      >
+        
+      </Box> */}
+    </HStack>
   );
 };
 

@@ -146,12 +146,12 @@ const DesktopBuild = () => {
               Yes, your students come to your link and not contentionary.com
             </Text>
             <UnorderedList fontWeight={400} fontSize="16px" color="#616161">
-              <ListItem> Your domain: www.example.com (₦1,500/ month)</ListItem>
+              <ListItem> Your domain: www.example.com (₦1,000/ month)</ListItem>
               <ListItem>
                 Our subdomain: www.example.cttc.ac (₦1,000/ month)
               </ListItem>
               <ListItem>
-                Your subdomian: example.Website.com (₦1,500/month)
+                Your subdomian: example.Website.com (₦1,000/month)
               </ListItem>
               <ListItem>www.contentionary.com/example (Free)</ListItem>
             </UnorderedList>
