@@ -99,15 +99,13 @@ const PartnerDesktop = () => {
               'url("/images/img12.png")', 
               'url("/images/img13.png")',
               'url("/images/img14.png")', 
-              'url("/images/img15.png")',
-
-
+              'url("/images/img15.png")'
             ].map((element, idx) => (
               <Box
               padding="20px"
               width="178px"
               marginLeft={'70px'}
-              height="70px"
+              height="fit-content"
               bgRepeat='no-repeat'
               bgSize='contain'
               bgPos='center'
